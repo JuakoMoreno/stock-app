@@ -1,17 +1,26 @@
 # stock_app
 
-A new Flutter project.
+Esta aplicacion escanea codigos de barras de productos en locales comerciales, los almacena temporalmente en una base de datos SQLite y luego al final del ciclo se sincroniza a una base de datos central, con el fin de llevar un stock de la tienda.
 
-## Getting Started
+## Features
+- Manejo Firebird hacia SQLite.
+- Base de datos SQLite para flutter.
+- Conexion mediante web service.
 
-This project is a starting point for a Flutter application.
+## Requerimientos
+- Dispositivo mobil (Android o iOS)
+- Dependencias
+  - ver más abajo.
 
-A few resources to get you started if this is your first Flutter project:
+## Instalacion
+1. Clone the repository:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    ```bash
+    codigo va aqui
+    ```
+## Uso
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# stock-app
+1. Otorgar permisos para utilizar camara del mobil.
+2. Sincronizar para comprobar que no hayan productos nuevos en la base de datos central.
+3. Escanear codigo de barras y selecciona la cantidad de productos.
+4. Al final del ciclo de control de stock, presionar **Enviar** para llevar los cambios a la base central.
